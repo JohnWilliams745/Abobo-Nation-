@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #1A237E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #FF6D00;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal input {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+}
+/* Google Sign-In Button */
+.google-btn {
+    background: #DB4437;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+/* Contact Section */
+.contact {
+    background-color: #1A237E;
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.contact a {
+    color: #FF6D00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}

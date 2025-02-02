@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abobo-Nation</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="logo">Abobo-Nation</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button id="dark-mode-toggle">🌙</button>
+        <button id="logout-btn" class="btn hidden">Logout</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Join Abobo-Nation – The Future is Now!</h1>
+        <p>A community built for visionaries, creators, and leaders.</p>
+        <button id="open-auth-modal" class="btn">Join Now</button>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <h2>🔥 Community Driven</h2>
+            <p>Connect with like-minded individuals.</p>
+        </div>
+        <div class="feature">
+            <h2>⚡ Innovation Hub</h2>
+            <p>Explore new ideas and projects.</p>
+        </div>
+        <div class="feature">
+            <h2>📢 Exclusive Content</h2>
+            <p>Access premium resources and insights.</p>
+        </div>
+    </section>
+
+    <!-- Email Subscription -->
+    <section class="subscribe">
+        <h2>Stay Updated</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button id="subscribe-btn" class="btn">Subscribe</button>
+    </section>
+
+    <!-- Authentication Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login / Sign Up</h2>
+            <input type="email" id="auth-email" placeholder="Email">
+            <input type="password" id="auth-password" placeholder="Password">
+            <button id="login-btn" class="btn">Login</button>
+            <button id="signup-btn" class="btn">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Abobo-Nation. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<!-- Google Login Button -->
+<button id="google-signin-btn" class="btn google-btn">Sign in with Google</button>
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p> Call us: <a href="tel:+2349070579231">+234 907 057 9231</a></p>
+</section>
